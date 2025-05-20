@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Governance - Django Commons</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Django Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../faq/" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Governance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../media/" class="nav-link">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../values/" class="nav-link">Values</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../faq/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../media/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/django-commons/django-commons.github.io/edit/master/docs/governance.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#django-commons-governance" class="nav-link">Django Commons Governance</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#relation-to-the-django-software-foundation" class="nav-link">Relation to the Django Software Foundation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#teams" class="nav-link">Teams</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#communication" class="nav-link">Communication</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#admin-team" class="nav-link">Admin team</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#code-of-conduct-team" class="nav-link">Code of Conduct team</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pypi-team" class="nav-link">PyPI team</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#security-team" class="nav-link">Security team</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="django-commons-governance">Django Commons Governance<a class="headerlink" href="#django-commons-governance" title="Permanent link">#</a></h1>
+<!-- [Google Doc Link](https://docs.google.com/document/d/14x-svksM6aqU-nPVvScm6fSgCyzQbWxaUR1MeMeCDoQ/edit?tab=t.0#heading=h.gbkvb0hnum4b) -->
+
+<p>For Django Commons to function effectively, we need trusted volunteers to step up and take responsibility for certain aspects that require ongoing attention and a certain level of trust from our community. These volunteers are organized into teams, each with a specific focus.</p>
+<h2 id="relation-to-the-django-software-foundation">Relation to the Django Software Foundation<a class="headerlink" href="#relation-to-the-django-software-foundation" title="Permanent link">#</a></h2>
+<p>Django Commons is an independent initiative from the Django Software Foundation (DSF). We are here for the third-party packages that complement Django. We are here as a community for and by Django users.</p>
+<h2 id="teams">Teams<a class="headerlink" href="#teams" title="Permanent link">#</a></h2>
+<p>There are four teams that work together to handle the operations of Django Commons.</p>
+<p>They are:</p>
+<ul>
+<li><a href="#admin-team">Admin Team</a></li>
+<li><a href="#code-of-conduct-team">CoC Team</a></li>
+<li><a href="#pypi-team">PyPI Team</a></li>
+<li><a href="#security-team">Security Team</a></li>
+</ul>
+<h2 id="communication">Communication<a class="headerlink" href="#communication" title="Permanent link">#</a></h2>
+<p>Our teams use two main ways to communicate: GitHub Discussions and team related Google Group email.</p>
+<p>Quick guide:</p>
+<ul>
+<li>Use <a href="https://github.com/orgs/django-commons/discussions">GitHub Discussions</a> for: technical questions, project ideas, general help, and community discussions.</li>
+<li>Use <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability">GitHub private vulnerability reporting</a> for: security concerns.</li>
+<li>Use <a href="mailto:django-commons-admin@googlegroups.com">Google Group email</a> for: personal matters, sensitive information, or private volunteer concerns.</li>
+</ul>
+<p>We believe in being open and transparent, so we encourage everyone to use GitHub Discussions as their first choice. This public space lets everyone see and join our conversations, which helps new volunteers learn from past discussions and feel included in our community.</p>
+<h2 id="admin-team">Admin team<a class="headerlink" href="#admin-team" title="Permanent link">#</a></h2>
+<p>This is the core team that is responsible for the overall management of the organization. They have admin access to the GitHub organization and are responsible for making sure that Django Commons is running smoothly.</p>
+<p>Responsibilities/tasks include:</p>
+<ul>
+<li>Manage incoming transfers and outgoing transfers of projects.</li>
+<li>Manage new membership applications.</li>
+<li>Respond to inquiries from the community on the <a href="https://github.com/orgs/django-commons/discussions">Discussion forum</a>.</li>
+<li>Manage all team rotation schedules, making sure that every team is actively staffed in a sustainable manner.</li>
+<li>Encourage people from diverse backgrounds to join one of the teams.</li>
+<li>Provide resources and facilitate projects seeking new or additional maintainers. Help find new maintainers for projects that need them.</li>
+<li>Facilitate discovery of maintenance best practices.</li>
+<li>Maintain the <a href="https://github.com/django-commons/membership">django-commons/membership</a> repository.</li>
+<li>Maintain the <a href="https://github.com/django-commons/controls">django-commons/controls</a> repository. This is the repository that contains the controls for managing Django Commons projects.</li>
+<li>Conduct check-ins with project maintainers and our community.</li>
+<li>Maintain this document and other documents that describe how Django Commons operates.</li>
+<li>Attend regular team meetings to discuss the state of Django Commons and what we can do to improve it.</li>
+<li>Help organize events and other community activities.</li>
+<li>Reach out to projects that might be interested in joining Django Commons.</li>
+</ul>
+<p>Out of scope responsibilities/tasks:</p>
+<ul>
+<li>Maintaining projects. This is the responsibility of the maintainers of the projects themselves. However, admin team members are free to contribute to projects as they see fit. There is just no expectation that they do so.</li>
+</ul>
+<p>Qualifications for admin members:</p>
+<ul>
+<li>Be a <a href="https://www.djangoproject.com/foundation/individual-members/">DSF Individual Member</a></li>
+<li>Contributed 10 discussion topics or comments in the last 6 months that have contributed positively to Django Commons</li>
+</ul>
+<h3 id="team-governance">Team governance<a class="headerlink" href="#team-governance" title="Permanent link">#</a></h3>
+<p>The admin team has a minimum of three and a maximum of ten members. The exact number is determined by the admin team from time to time. The size of the admin team should reflect the workload and responsibilities of the team; as the needs of the organization change, the size of the admin team will adjust by vote. (Example: during transition periods, the size of the admin team may need to be larger.)
+The admin team may change around September.  In August, the admin team will put out a public call to its membership to gauge interest in joining the admin team. Based on that interest, the admin team will decide:</p>
+<ul>
+<li>The size of the admin team for the upcoming term.</li>
+<li>Whether team changes are needed, or whether some admins can step down to make room for new admins.</li>
+<li>Which admins will step down, and which will continue to serve.</li>
+</ul>
+<p>At this time, the process for selecting new admin team members is based around the current admin team interviewing candidates it deems suitable. An election process was considered but as of April 2025, the admin team feels Django Commons has not matured enough for elections to provide tangible benefits over self-selection.</p>
+<p>We strive to have a team <a href="../values/">reflective of our values</a>.</p>
+<h3 id="means-of-communication">Means of communication<a class="headerlink" href="#means-of-communication" title="Permanent link">#</a></h3>
+<p>The admins internally communicate via the django-commons-admin@googlegroups.com mailing list and through admin meetings. The discussion taking place on the mailing list is private and only visible to admin team members. However, the team should aim to operate transparently and use public channels, like posting to GitHub Discussions, when possible.</p>
+<p>To contact the admin team, open an <a href="https://github.com/django-commons/membership/issues/new/choose">Admin request issue on the membership repo</a>. You can also publicly tag the @django-commons/admins team on GitHub to get our attention. If you need to reach out privately to the admin team, you can do so by sending an email to django-commons-admin@googlegroups.com.</p>
+<h2 id="code-of-conduct-team">Code of Conduct team<a class="headerlink" href="#code-of-conduct-team" title="Permanent link">#</a></h2>
+<p>The Code of Conduct team is responsible for handling complaints of Django Code of Conduct violations that occur in the Django Commons community.</p>
+<p>Responsibilities/tasks include:</p>
+<ul>
+<li>Investigating and responding to complaints of Code of Conduct violations.</li>
+<li>Making decisions on how to handle complaints of Code of Conduct violations.</li>
+<li>Communicating with the person who made the complaint and the person who the complaint is about and any other relevant parties.</li>
+<li>Keeping records of complaints and how they were handled.</li>
+<li>Utilize the <a href="https://github.com/django/dsf-working-groups/blob/main/active/code-of-conduct.md">Code of Conduct Working Group’s</a> recommendations and any other relevant DSF Working Group recommendations regarding code of conduct.</li>
+</ul>
+<h3 id="team-governance_1">Team governance<a class="headerlink" href="#team-governance_1" title="Permanent link">#</a></h3>
+<p>The Code of Conduct team has no set rotation schedule. Members can step down at any time and interested parties can reach out to the admin team if they are interested in being part of the code of conduct team. The admin team is responsible for periodically checking in to make sure all members are still okay in continuing their role and is tasked with finding replacements if needed. Admin team members are allowed to be on the Code of Conduct team too if they wish.</p>
+<p>The preferred size of the Code of Conduct team is 2-5 members. This is to make sure that the workload is distributed evenly and to allow for more diversity of thought and perspective.</p>
+<h3 id="means-of-communication_1">Means of communication<a class="headerlink" href="#means-of-communication_1" title="Permanent link">#</a></h3>
+<p>The Code of Conduct team communicates via the django-commons-coc@googlegroups.com mailing list.</p>
+<h2 id="pypi-team">PyPI team<a class="headerlink" href="#pypi-team" title="Permanent link">#</a></h2>
+<p>The PyPI team is responsible for safeguarding PyPI access to all projects hosted by Django Commons.</p>
+<p>Responsibilities/tasks include:</p>
+<ul>
+<li>Managing PyPI access for all projects hosted by Django Commons.</li>
+<li>Adding and removing users from projects as needed.</li>
+<li>Helping project maintainers set up automated releases for their projects.</li>
+<li>Helping project maintainers with any other issues they have with PyPI.</li>
+<li>Monitoring for any suspicious activity on PyPI, through email notifications sent by PyPI and other means, and follow-up with the team admins.</li>
+<li>Responding - together with the security team - to any security incidents that occur related to PyPI.</li>
+<li>Have Owner role on all PyPI and Test PyPI projects for Django Commons.</li>
+<li>Have MFA set up with PyPI and Test PyPI.</li>
+<li>Updating project admins access in PyPI and Test PyPI to reflect GitHub team membership.</li>
+</ul>
+<p>Out-of-scope responsibilities/tasks:</p>
+<ul>
+<li>Making releases. This is the responsibility of the maintainers of the projects themselves.</li>
+<li>Yanking releases that have issues/bugs. This is the responsibility of the maintainers of the projects themselves. An exception is made for security issues or other issues that require immediate action.</li>
+</ul>
+<h3 id="team-governance_2">Team governance<a class="headerlink" href="#team-governance_2" title="Permanent link">#</a></h3>
+<p>Members of the PyPI team are appointed by the admin team and usually consist of admin team members or recent admin team alumni.
+The PyPI team has a rotation schedule of 12 months, given the overall low workload and effort required to onboard and offboard members. The team has a preferred size of 2-3 members. This is to balance the number of people with unlimited access to PyPI and the <a href="https://en.wikipedia.org/wiki/Bus_factor">bus factor</a> associated with a small group of people.
+The rotation schedule coincides with the rotation schedule of the admin team, centered around October 1st as the start of the cycle. This means that the PyPI team is re-staffed after the new admin team is in place.</p>
+<h3 id="means-of-communication_2">Means of communication<a class="headerlink" href="#means-of-communication_2" title="Permanent link">#</a></h3>
+<p>The PyPI team communicates via the django-commons-pypi@googlegroups.com mailing list.</p>
+<p>To contact the PyPI team with any questions or concerns, they can either email the mailing list or open an <a href="https://github.com/django-commons/membership/issues/">Admin request issue on the membership repo</a>.</p>
+<h2 id="security-team">Security team<a class="headerlink" href="#security-team" title="Permanent link">#</a></h2>
+<p>The security team is there to support project maintainers in handling security reports. The primary responsibility for handling security reports lies with the project maintainers.</p>
+<p>Responsibilities/tasks include:</p>
+<ul>
+<li>Supporting projects maintainers in handling security reports by providing advice or guidance.</li>
+<li>Being a backup contact point for security reporters when project maintainers fail to respond to a security report.</li>
+<li>In cases where a maintainer is unresponsive, the security team may take over the project to fix the security issue at their discretion.</li>
+<li>Helping to set organization wide best practices regarding security.</li>
+<li>Helping project maintainers implement security best practices.</li>
+</ul>
+<p>Out-of-scope responsibilities/tasks:</p>
+<ul>
+<li>Yanking packages from PyPI - this should be done by project maintainers in coordination with the PyPI team. An exception is made when the project maintainer is unresponsive.</li>
+</ul>
+<h3 id="team-governance_3">Team governance<a class="headerlink" href="#team-governance_3" title="Permanent link">#</a></h3>
+<p>Members of the Security team are appointed by the admin team.</p>
+<p>The Security team has a rotation schedule of 12 months. The team should have at least 2 members.</p>
+<p>The rotation schedule coincides with the rotation schedule of the admin team, centered around October 1st as the start of the cycle. This means that the Security team is re-staffed after the new admin team is in place. The team may consist of members of the new admin team.</p>
+<h3 id="means-of-communication_3">Means of communication<a class="headerlink" href="#means-of-communication_3" title="Permanent link">#</a></h3>
+<p>The security team receives reports through <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability">GitHub’s private vulnerability reporting</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
