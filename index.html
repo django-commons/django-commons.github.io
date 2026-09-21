@@ -509,9 +509,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="governance/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -525,7 +536,107 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="governance/django-commons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django Commons
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="governance/project-maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="response-timeframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Response Timeframes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -871,20 +982,20 @@
 </li>
 <li>Project Members<ul>
 <li>The group of members dedicated to a specific repository.</li>
-<li>This role grants the members Triage permission for the repository.</li>
-<li>Mention with <code>@django-commons/&lt;repository&gt;</code></li>
+<li>This role grants the members GitHub's Triage permission for the repository.</li>
+<li>Mention with <code>@django-commons/&lt;project&gt;</code></li>
 </ul>
 </li>
 <li>Project Committers<ul>
-<li>The group of members who can commit changes to main for a repository.</li>
-<li>This role grants the members Commit permission for the repository.</li>
-<li>Mention with <code>@django-commons/&lt;repository&gt;-committers</code></li>
+<li>The group of members who can commit changes to main for a repository, but not publish releases.</li>
+<li>This role grants the members GitHub's Maintain permission for the repository.</li>
+<li>Mention with <code>@django-commons/&lt;project&gt;-committers</code></li>
 </ul>
 </li>
 <li>Project Admins:<ul>
 <li>The group of members who are the admins for a repository.</li>
-<li>This role grants the members Admin permission for the repository.</li>
-<li>Mention with <code>@django-commons/&lt;repository&gt;-admins</code></li>
+<li>This role grants the members GitHub's Admin permission for the repository.</li>
+<li>Mention with <code>@django-commons/&lt;project&gt;-admins</code></li>
 </ul>
 </li>
 </ul>

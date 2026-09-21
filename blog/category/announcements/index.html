@@ -388,9 +388,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../governance/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -404,7 +415,107 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../governance/django-commons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django Commons
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../governance/project-maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../response-timeframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Response Timeframes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -594,6 +705,88 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-09-21 00:00:00+00:00">September 21, 2026</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">Announcements</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="thank-you-storm"><a class="toclink" href="../../2026/09/21/thank-you-storm/">Thank you, Storm</a></h2>
+<p>One of the things we say a lot at Django Commons is that sustainability has to
+include the people, not just the packages. It's easy to say. It's harder to
+mean it when someone who has carried real weight decides it's time to step
+back. Storm Heg is stepping down from the admin team, and just like we did when
+Lacey stepped away, we want to send him off the right way: with gratitude, and
+without any suggestion that leaving is a failure.</p>
+<p>Because it isn't. It's the plan working.</p>
+<p>If Lacey was the conscience of the group, Storm was the one quietly making sure
+the foundation underneath us wouldn't crack. A lot of what he did is the kind
+of work you only notice when it <em>doesn't</em> happen: the domain that keeps
+resolving, the package that only gets published by the workflow that's supposed
+to publish it, the security notification that someone actually reads.</p>
+<p>Storm took ownership of our DNS story end to end, standing up our
+<a href="https://desec.io/">deSEC.io</a> setup, sorting out the sponsorship, and moving our
+domain over. He didn't stop at "it works for us," either; he spent time figuring out how to hand
+project admins limited, safe control over their own DNS records, so the
+infrastructure could scale past any one person. Past him, specifically.</p>
+<p>On the packaging side, Storm was our steady hand on PyPI. He pushed us toward
+<a href="https://docs.pypi.org/trusted-publishers/">Trusted Publishing</a>, documented how to transfer projects (down to the npm
+publishing workflows for the packages that need them), and thought hard about
+how to rotate the PyPI team without dropping the ball on security. That
+vigilance wasn't theoretical: when an API token was used to upload
+django-debug-toolbar in a way that bypassed Trusted Publishing, Storm was the
+one who caught it and flagged it. That's exactly the kind of "boring" attention
+that keeps an ecosystem safe.</p>
+<p>And when it came time to write down how Django Commons actually <em>works</em> — the
+governance document, the values, the admin playbooks, the security team's remit
+— Storm was in the middle of it, arguing for clarity and for processes that
+would outlast the current crew. He wanted the next people to have it easier
+than we did.</p>
+<p>Storm also championed the effort for us to create our own <a href="https://opencollective.com/django-commons">Open Collective organization</a>
+so that we could provide a mechanism for maintainers to accept funds.
+That effort opens the door to several other possibilities to make maintaining
+OSS sustainable.</p>
+<p>You'll also have seen him out in the community: at DjangoCon,
+on stage at <a href="https://archive.fosdem.org/2025/schedule/speaker/storm_heg/">FOSDEM</a>,
+and thoughtfully replying in discussions when a hard question needed
+a careful answer instead of a fast one.</p>
+<p>The through-line in all of it is that Storm built things to survive his own
+departure. The DNS handoff, the publishing docs, the governance work, the funding work,
+the PyPI rotation — every one of those was really about making sure Django Commons
+didn't depend on Storm being in the room. So when he tells us he's ready to step
+back, the most fitting response is to prove him right: to keep the lights on
+with the systems he left us.</p>
+<p>So, thank you, Storm. For the DNS records and the deSEC account, for Trusted
+Publishing and the alarm you raised when something looked off, for the
+governance docs, for the funding, and the playbooks, and for building all of it to keep working
+without you. Take the break. You earned it — and thanks to you, we've got this.</p>
+<p>— The Django Commons admins</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-07-06 00:00:00+00:00">July 6, 2026</time></li>
         
           <li class="md-meta__item">
@@ -725,7 +918,7 @@
 <li>Website maintenance: adding new projects to the website, adding and maintaining information</li>
 <li>Administrative and funding tasks: governance decisions and docs, Terraform tooling, manage contributions on Thanks.dev and Open Collective, branding updates</li>
 </ul>
-<p>Read more about the <a href="https://django-commons.org/governance/#admin-team">admin team</a>.</p>
+<p>Read more about the <a href="https://django-commons.org/governance/django-commons/#admin-team">admin team</a>.</p>
 <h3 id="how-will-i-know-if-im-selected"><a class="toclink" href="../../2026/02/03/were-recruiting-new-admins/#how-will-i-know-if-im-selected">How will I know if I'm selected?</a></h3>
 <p>Applications must be submitted by <a href="https://time.is/compare/2359_16_March_2026_Anywhere_on_earth">March 16th, 2026 AOE</a>. We will send a response to all applicants by <a href="https://time.is/compare/2359_1_April_2026_Anywhere_on_earth">April 1st, 2026 AOE</a>.</p>
 <p>Our aim is to onboard 1-3 new admins between now and April 30, 2026. Selection of new admin members will be made by the current admin team.</p>

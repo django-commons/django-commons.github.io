@@ -1,0 +1,1333 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../django-commons/">
+      
+      
+        <link rel="next" href="../../response-timeframes/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/logo-dark.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Project Maintenance - Django Commons</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-maintenance-governance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Django Commons" class="md-header__button md-logo" aria-label="Django Commons" data-md-component="logo">
+      
+  <img src="../../assets/logo-dark.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Django Commons
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project Maintenance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/django-commons/membership" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    django-commons/membership
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Django Commons" class="md-nav__button md-logo" aria-label="Django Commons" data-md-component="logo">
+      
+  <img src="../../assets/logo-dark.png" alt="logo">
+
+    </a>
+    Django Commons
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/django-commons/membership" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    django-commons/membership
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../funding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintainers-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources for Maintainers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organization
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Organization
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decision_record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decision Record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../django-commons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django Commons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Maintenance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maintenance States
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maintenance States">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#healthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Healthy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dormant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dormant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dormant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#determining-a-project-to-be-dormant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determining a project to be dormant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-of-applications-for-maintainers-from-the-django-commons-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review of applications for maintainers from the Django Commons Community
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commons-stewardship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commons Stewardship
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archived" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Archived
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributor-trust-ladder-for-dormant-and-archived-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributor Trust Ladder for Dormant and Archived Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributor Trust Ladder for Dormant and Archived Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-contributors-new-to-open-source-or-without-a-strong-public-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For contributors new to open source or without a strong public profile:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For contributors new to open source or without a strong public profile:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Contribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-members-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Members Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-committers-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Committers Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-admin-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Admin Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-contributors-with-a-strong-open-source-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For contributors with a strong open source profile:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-contributors-assessed-via-a-direct-conversation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For contributors assessed via a direct conversation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../response-timeframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Response Timeframes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../values/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Values
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sponsors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sponsors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maintenance States
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maintenance States">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#healthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Healthy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dormant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dormant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dormant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#determining-a-project-to-be-dormant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determining a project to be dormant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-of-applications-for-maintainers-from-the-django-commons-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review of applications for maintainers from the Django Commons Community
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commons-stewardship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commons Stewardship
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archived" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Archived
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributor-trust-ladder-for-dormant-and-archived-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributor Trust Ladder for Dormant and Archived Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributor Trust Ladder for Dormant and Archived Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-contributors-new-to-open-source-or-without-a-strong-public-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For contributors new to open source or without a strong public profile:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For contributors new to open source or without a strong public profile:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Contribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-members-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Members Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-committers-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Committers Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-admin-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Admin Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-contributors-with-a-strong-open-source-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For contributors with a strong open source profile:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-contributors-assessed-via-a-direct-conversation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For contributors assessed via a direct conversation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="project-maintenance-governance">Project Maintenance Governance<a class="headerlink" href="#project-maintenance-governance" title="Permanent link">#</a></h1>
+<!-- [Google Doc Link](https://docs.google.com/document/d/1LmUZszX4a0C9ess6c1WDIkWUrc5HMtIY22JMPs3sWvY/edit?usp=sharing) -->
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
+<p>Django Commons creates the conditions for maintainership to transfer smoothly so that when maintainers step back, the community has a clear path to step in.</p>
+<p>This document will outline the various states a project can be in, how a project transitions between them, and where support is provided.</p>
+<hr />
+<h2 id="maintenance-states">Maintenance States<a class="headerlink" href="#maintenance-states" title="Permanent link">#</a></h2>
+<h3 id="healthy">Healthy<a class="headerlink" href="#healthy" title="Permanent link">#</a></h3>
+<p>A project has a responsive maintainer, clear ownership, regular releases, and an active repository.</p>
+<h3 id="dormant">Dormant<a class="headerlink" href="#dormant" title="Permanent link">#</a></h3>
+<p>A project has an unresponsive maintainer, a lack of forward compatibility, and potentially community complaints.</p>
+<h4 id="determining-a-project-to-be-dormant">Determining a project to be dormant<a class="headerlink" href="#determining-a-project-to-be-dormant" title="Permanent link">#</a></h4>
+<p>A project is determined to be dormant when any of the following occur:</p>
+<ul>
+<li>A lack of activity across issues, pull requests, commits, and releases from the project admins for a period of <strong>six months</strong></li>
+<li>A lack of a release within <strong>six months</strong> of a major Django version release (5.0, 5.1, 5.2, etc.)</li>
+<li>A <strong>critical bug</strong> has gone unaddressed for a significant period</li>
+<li>A <strong>security vulnerability</strong> has been reported and not acknowledged within the timeframe for its severity, as defined in <a href="../../response-timeframes/">response timeframes</a></li>
+</ul>
+<h4 id="review-of-applications-for-maintainers-from-the-django-commons-community">Review of applications for maintainers from the Django Commons Community<a class="headerlink" href="#review-of-applications-for-maintainers-from-the-django-commons-community" title="Permanent link">#</a></h4>
+<p>When a project has been determined to be dormant, members of the Django Commons community may put themselves forward as maintainers of the project. The Django Commons admins (<code>@django-commons/admins</code>) will review the applicant and decide based on:</p>
+<ol>
+<li>Tenure of membership with Django Commons, Django, and Python communities</li>
+<li>Work already done on the project, both merged and unmerged PRs</li>
+<li>Engagement with the project maintainer as evidenced by comments on PRs and/or discussions in the repos discussions (if they exist)</li>
+</ol>
+<h3 id="commons-stewardship">Commons Stewardship<a class="headerlink" href="#commons-stewardship" title="Permanent link">#</a></h3>
+<p>The Django Commons admins (<code>@django-commons/admins</code>) have direct administrative control to ensure the health of the ecosystem. This is a temporary state, and projects aren't meant to be here long term. Projects should either have new maintainers identified or be archived.</p>
+<p><strong>What admins will do:</strong></p>
+<ul>
+<li>Make minor releases to unblock downstream Django applications from upgrading dependencies. These releases should be minor in substance and may involve small changes, such as when Django moved to a single <code>STORAGES</code> setting.</li>
+</ul>
+<p><strong>What admins will not do:</strong></p>
+<ul>
+<li>Actively develop the project as a team. Admins can participate as individuals, but not in an official capacity.</li>
+<li>Perform major refactors. That requires one or more engaged project admins who can maintain and support those changes over time.</li>
+</ul>
+<h3 id="archived">Archived<a class="headerlink" href="#archived" title="Permanent link">#</a></h3>
+<p>No active maintenance is expected. The repository is retained for historical or referential purposes.</p>
+<p>Having archived packages is a normal outcome in open source. If no contributor steps forward to adopt an abandoned project, archiving is a valid and expected path.</p>
+<p>If the original maintainer or a new contributor later wants to revive an archived project, the Contributor Trust Ladder below applies the same way it does for dormant projects. Reach out to the Django Commons admins (@django-commons/admins) to start that conversation.</p>
+<hr />
+<h2 id="contributor-trust-ladder-for-dormant-and-archived-projects">Contributor Trust Ladder for Dormant and Archived Projects<a class="headerlink" href="#contributor-trust-ladder-for-dormant-and-archived-projects" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Note:</strong> This section applies only to <strong>dormant and archived projects</strong> being adopted by a new contributor. Active projects with existing maintainers are self-organizing — current maintainers decide when and how to onboard new contributors, committers, or co-maintainers without Django Commons involvement.</p>
+</blockquote>
+<p>Django Commons takes a case-by-case approach to granting access to new contributors for abandoned projects. The goal is to avoid placing excessive operational burden on the Django Commons admins (<code>@django-commons/admins</code>) while still ensuring trust is established before handing over control.</p>
+<h3 id="for-contributors-new-to-open-source-or-without-a-strong-public-profile">For contributors new to open source or without a strong public profile:<a class="headerlink" href="#for-contributors-new-to-open-source-or-without-a-strong-public-profile" title="Permanent link">#</a></h3>
+<p>The following staged path applies.</p>
+<h4 id="open-contribution">Open Contribution<a class="headerlink" href="#open-contribution" title="Permanent link">#</a></h4>
+<p><em>Goal: Establish a track record of quality contributions. This level requires no team membership at all.</em></p>
+<p>During this stage, anyone is welcome to contribute to the project without requiring any special permissions beyond a standard fork-and-PR workflow.</p>
+<ul>
+<li>There is no expectation that a contributor will advance; some contributors may be happy to stay at this level indefinitely.</li>
+<li>Contributors who are interested and show consistent, high-quality engagement are welcome to move up the ladder.</li>
+<li>A person can request to advance by <a href="https://github.com/django-commons/membership/issues/new?template=admin-request.yml">creating an issue</a> explaining why they want to contribute and what their plans are for the project.</li>
+</ul>
+<h4 id="project-members-team">Project Members Team<a class="headerlink" href="#project-members-team" title="Permanent link">#</a></h4>
+<p><em>Goal: Let a contributor help manage the project's backlog and assign themselves to issues. This level is aligned with the project members team, <code>@django-commons/&lt;project&gt;</code>.</em></p>
+<p>The project members team grants GitHub's <code>triage</code> permission:</p>
+<ul>
+<li>Assign themselves and others to issues</li>
+<li>Applying and removing labels</li>
+<li>Closing, reopening, and marking duplicate issues and pull requests</li>
+<li>Requesting pull request reviews</li>
+</ul>
+<p>It grants no write access, so a member at this level still contributes code through the standard fork-and-PR workflow.</p>
+<p>This is a deliberately low bar. Anyone can request to join by <a href="https://github.com/django-commons/membership/issues/new?template=admin-request.yml">creating an issue</a> naming the project and describing how they want to help. The Django Commons admins will generally grant it on evidence of genuine engagement, such as a few merged pull requests or sustained, constructive participation in the project's issues.</p>
+<p>Because triage permission cannot modify code or releases, a request at this level is low risk and should be easy to approve. It can be revoked just as easily if it goes unused or is misused.</p>
+<h4 id="project-committers-team">Project Committers Team<a class="headerlink" href="#project-committers-team" title="Permanent link">#</a></h4>
+<p><em>Goal: Enable a trusted contributor to work more autonomously on non-release work. This level is aligned with the project committers team, <code>@django-commons/&lt;project&gt;-committers</code>.</em></p>
+<p>Contributors who have demonstrated reliable judgment may be invited to join the project committers team, which grants:</p>
+<ul>
+<li>Creating branches directly in the repository</li>
+<li>Pushing to and merging into <code>main</code></li>
+<li>Reviewing and merging pull requests</li>
+<li>Managing issues, discussions, and non-sensitive repository settings</li>
+</ul>
+<p>The following remain restricted to the project admin team (<code>@django-commons/&lt;project&gt;-admins</code>) and the Django Commons admins (<code>@django-commons/admins</code>):</p>
+<ul>
+<li>Merging into the main/protected branch</li>
+<li>Cutting releases and publishing to PyPI</li>
+<li>Changing repository settings, branch protection rules, or secrets</li>
+</ul>
+<p>If a project lacks a project admin team, the Django Commons admins continue to review and approve all releases and will actively collaborate with the contributor on significant changes before they land.</p>
+<h4 id="project-admin-team">Project Admin Team<a class="headerlink" href="#project-admin-team" title="Permanent link">#</a></h4>
+<p><em>Goal: Formally hand stewardship of the project to a trusted maintainer. This level is aligned with the project admin team, <code>@django-commons/&lt;project&gt;-admins</code>.</em></p>
+<p>After sustained, demonstrated trustworthiness as a committer, including sound judgment on security, responsiveness to feedback, and alignment with Django Commons values, a contributor may be elevated to full maintainer.</p>
+<p>The new permissions are:</p>
+<ul>
+<li>The ability to publish releases</li>
+<li>Define the governance for the project</li>
+</ul>
+<p>Progression is not automatic or time-based. It requires a conscious decision by the Django Commons admins, ideally discussed openly in the membership repository. A contributor can be moved back to a previous stage if serious concerns arise.</p>
+<p>If an original maintainer becomes active again after a new Project Admin has taken over, both parties are expected to have a direct conversation to determine the project's direction going forward. Any differences that can't be resolved between them should be raised to the Django Commons admins (@django-commons/admins) for a final decision.</p>
+<p>Adopting a project does not come with the ability to take it out of Django Commons. See <a href="https://github.com/django-commons/membership/blob/main/outgoing_repo_requirements.md">Requirements for Outgoing Repositories for more information</a>.</p>
+<h3 id="for-contributors-with-a-strong-open-source-profile">For contributors with a strong open source profile:<a class="headerlink" href="#for-contributors-with-a-strong-open-source-profile" title="Permanent link">#</a></h3>
+<p>If a contributor has a clearly established track record, like a strong commit history, active public repositories, or prior open source work, the Django Commons admins may grant commit access directly, skipping the early stages. Release access may follow at their discretion.</p>
+<h3 id="for-contributors-assessed-via-a-direct-conversation">For contributors assessed via a direct conversation:<a class="headerlink" href="#for-contributors-assessed-via-a-direct-conversation" title="Permanent link">#</a></h3>
+<p>A short call or interview with the Django Commons admins is a valid path to establishing trust. Relevant signals include:</p>
+<ul>
+<li>Talks or presentations at Python or Django conferences or meetups</li>
+<li>Attendance or organizing of such events</li>
+<li>Other demonstrable community involvement</li>
+</ul>
+<p>Release access is always decided on a case-by-case basis by the Django Commons admins. There is no automatic progression to release access regardless of which path a contributor takes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

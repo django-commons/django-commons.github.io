@@ -500,9 +500,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../governance/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -516,7 +527,107 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/django-commons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django Commons
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/project-maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../response-timeframes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Response Timeframes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -793,15 +904,20 @@ and the community stronger.</p>
 <p>There are three teams for each repository. They each have different
 permissions.</p>
 <ul>
-<li>[project-name]</li>
-<li>[project-name]-committers</li>
-<li>[project-name]-admins</li>
+<li><code>@django-commons/&lt;project&gt;</code> (the project members team)</li>
+<li><code>@django-commons/&lt;project&gt;-committers</code> (the project committers team)</li>
+<li><code>@django-commons/&lt;project&gt;-admins</code> (the project admin team)</li>
 </ul>
-<p>The general team [project-name] gives you triage permissions (assign issues, labels, etc).</p>
-<p>The [project-name]-committers gives you permission to merge pull requests and push to main.
-They are people who generally maintain the project.</p>
-<p>The [project-name]-admins gives you permissions to administrate the GitHub repo and release new versions to PyPI.
-This may be the same group of people that are on [project-name]-commiters.</p>
+<p>The project members team, <code>@django-commons/&lt;project&gt;</code>, gives you triage permissions (assign
+issues, labels, etc).</p>
+<p>The project committers team, <code>@django-commons/&lt;project&gt;-committers</code>, gives you permission to
+merge pull requests and push to main via GitHub's <code>maintain</code> permission. It does not grant
+the ability to publish releases. They are the people who generally maintain the project.</p>
+<p>The project admin team, <code>@django-commons/&lt;project&gt;-admins</code>, gives you permissions to
+administrate the GitHub repo and release new versions to PyPI. This may be the same group of
+people that are on <code>@django-commons/&lt;project&gt;-committers</code>.</p>
+<p>These are distinct from the organization-wide teams, <code>@django-commons/admins</code> and
+<code>@django-commons/super-admins</code>, which administer Django Commons as a whole.</p>
 <h2 id="who-can-work-on-a-project">Who can work on a project?<a class="headerlink" href="#who-can-work-on-a-project" title="Permanent link">#</a></h2>
 <p>Anyone can fork any project and work on any issue. All projects within Django Commons are community
 maintained. If you're interested in working on a specific project, go get to work!</p>
@@ -811,8 +927,7 @@ maintained. If you're interested in working on a specific project, go get to wor
   to manage the GitHub organization. Any issues in this repo are for maintain the magic behind the scenes</li>
 <li><a href="https://github.com/django-commons/best-practices">best-practices</a>: A sample project with best practices for Django Commons projects.</li>
 <li><a href="https://github.com/django-commons/membership">membership</a>: The public face for the organization. All issues by members and contributors should be created
-  here. <strong>If you're looking for where to ask a question, this is the place for you</strong>
--</li>
+  here. <strong>If you're looking for where to ask a question, this is the place for you</strong></li>
 </ul>
 <h3 id="do-we-allow-all-packages-or-just-django-adjacent">Do we allow all packages or just Django-adjacent?<a class="headerlink" href="#do-we-allow-all-packages-or-just-django-adjacent" title="Permanent link">#</a></h3>
 <p>Any package is welcome to join Django Commons so long as it has tangible benefits to the Django Community at large and the package benefits from being part of Django Commons OR it is about Django Specifically.</p>
